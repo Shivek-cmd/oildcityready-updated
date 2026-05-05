@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:oilcityreadymix.com)",
+      "Read(//d/Chrishan Solution/GHL_SNAPSHOT_BRAIN/ghl-guides/**)"
+    ]
+  }
+}

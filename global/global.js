@@ -159,10 +159,14 @@
 
     updateState(body.classList.contains('open'));
 
-    toggle.addEventListener('click', function () {
+    function toggleAccordion(event) {
+      if (event) event.preventDefault();
       var isOpen = toggle.getAttribute('aria-expanded') === 'true';
       updateState(!isOpen);
-    });
+    }
+
+    toggle.addEventListener('click', toggleAccordion);
+    toggle.addEventListener('touchend', toggleAccordion, { passive: false });
   }
 
 
